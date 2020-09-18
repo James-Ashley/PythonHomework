@@ -32,16 +32,17 @@ with open (budget_data, 'r') as csvfile:
             prevMonth = int(row[1])
     avgDelta = sum(delta) / len(delta)
 
- greatestIncrease = max(delta)
- greatestDecrease = min(delta)
+greatestIncrease = max(delta)
+greatestDecrease = min(delta)
 
- increaseIndex = delta.index(greatestIncrease)+1
- decreaseIndex = delta.index(greatestDecrease)+1
-
+increaseIndex = delta.index(greatestIncrease)+1
+decreaseIndex = delta.index(greatestDecrease)+1
 
 with open (budget_data, 'r') as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ',')
     next(csvreader)
+
+
 
    
 
