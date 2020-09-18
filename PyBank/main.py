@@ -25,12 +25,19 @@ with open (budget_data, 'r') as csvfile:
     delta = []
     prevMonth = 0
     for row in csvreader:
-        if prevMonth == 0
+        if prevMonth == 0:
             prevMonth = int(row[1])
-        prevMonth.append(int(row[1]))
+        else:
+            delta.append(int(row[1])-prevMonth)
+            prevMonth = int(row[1])
+    avgDelta = sum(delta) / len(delta)
+ 
+
+
+            
         # currentMonth = prevMonth.append(int(row[])-1)
         
-    print(currentMonth)
+    # print(currentMonth)
 
 
 #   * The net total amount of "Profit/Losses" over the entire period
