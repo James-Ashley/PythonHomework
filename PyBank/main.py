@@ -31,23 +31,29 @@ with open (budget_data, 'r') as csvfile:
             delta.append(int(row[1])-prevMonth)
             prevMonth = int(row[1])
     avgDelta = sum(delta) / len(delta)
- 
+
+ greatestIncrease = max(delta)
+ greatestDecrease = min(delta)
+
+ increaseIndex = delta.index(greatestIncrease)+1
+ decreaseIndex = delta.index(greatestDecrease)+1
+
+
+with open (budget_data, 'r') as csvfile:
+    csvreader = csv.reader(csvfile, delimiter = ',')
+    next(csvreader)
+
+   
 
 
             
-        # currentMonth = prevMonth.append(int(row[])-1)
         
-    # print(currentMonth)
 
 
-#   * The net total amount of "Profit/Losses" over the entire period
-    
-    
+#   * The net total amount of "Profit/Losses" over the entire period      
 #   * The average of the changes in "Profit/Losses" over the entire period
 #   * The greatest increase in profits (date and amount) over the entire period
-greatestIncrease = []
 #   * The greatest decrease in losses (date and amount) over the entire period
-greatestDecrease = []
 # * As an example, your analysis should look similar to the one below:
 
 #   ```text
