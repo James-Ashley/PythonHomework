@@ -20,17 +20,17 @@ with open (pollsData, 'r') as csvfile:
             canidatesVotes[canidates] = canidatesVotes[canidates]+1
 
 votesTotal = sum(canidatesVotes.values())
-print(f"total votes {votesTotal}")
+print(f"Total Votes: {votesTotal}")
 
 for i in canidatesVotes:
-    percVotes = (float(canidatesVotes[i])/votesTotal)*100
-    print(f"{i} {round(percVotes, 2)} {canidatesVotes[i]}")
+    percVotes = (canidatesVotes[i])/(votesTotal)*100
+    print(f"{i} {percVotes:.3f}% {canidatesVotes[i]}")
 
 for key in canidatesVotes.keys():
     if canidatesVotes[key] == max(canidatesVotes.values()):
         winner = key
 
-print(f"winner {winner}")
+print(f"Winner: {winner}")
 
 
 
