@@ -58,7 +58,7 @@ increaseIndex = delta.index(greatestIncrease)
 decreaseIndex = delta.index(greatestDecrease)
 
 #final script
-# print()
+
 analysisText = (f"""
     Financial Analysis
     ---------------------------------
@@ -68,7 +68,7 @@ analysisText = (f"""
     Greatest Increase in Profits:  {monthsList[increaseIndex+1]} (${greatestIncrease})
     Greatest Decrease in Profits:  {monthsList[decreaseIndex+1]} (${greatestDecrease})
     """)
-    # greatestIncrease , greatestDecrease , monthsList[increaseIndex+1] , monthsList[decreaseIndex+1], avgDelta)
+    
 
 print(analysisText)
 
@@ -78,7 +78,6 @@ file = os.path.join("analysis", "PyBank_Results.txt")
  
 with open (file, 'w') as text:
     text.write(analysisText)
-    text.close
     
 
 
