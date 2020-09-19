@@ -40,8 +40,6 @@ with open (pollsData, 'r') as csvfile:
 
 votesTotal = sum(canidatesVotes.values())
 
-# print(f"Total Votes: {votesTotal}")
-
 #   * A complete list of candidates who received votes
 #   * The percentage of votes each candidate won
 #   * The total number of votes each candidate won
@@ -55,9 +53,6 @@ for i in canidatesVotes:
 for key in canidatesVotes.keys():
     if canidatesVotes[key] == max(canidatesVotes.values()):
         winner = key
-
-# print(candVotesstring)
-# print(f"Winner: {winner}")
 
 analysisText = (f"""
 Election Results
