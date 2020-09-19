@@ -76,4 +76,3 @@ file = os.path.join("analysis", "PyPoll_Results.txt")
  
 with open (file, 'w') as text:
     text.write(analysisText)
-    text.close
