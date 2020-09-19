@@ -59,7 +59,6 @@ decreaseIndex = delta.index(greatestDecrease)
 
 #final script
 # print()
-mulit = """hello, """
 analysisText = (f"""
     Financial Analysis
     ---------------------------------
@@ -75,9 +74,8 @@ print(analysisText)
 
 #final text output
 
-
-file = "PyBank_Results.txt"
-
+file = os.path.join("analysis", "PyBank_Results.txt")
+ 
 with open (file, 'w') as text:
     text.write(analysisText)
     text.close
