@@ -61,14 +61,13 @@ decreaseIndex = delta.index(greatestDecrease)
 # print()
 mulit = """hello, """
 print(f"""
-    Financial Analysis\n
-    ---------------------------------\n
-    Total Months: {months}\n
-    Total: $ {profitsTotal}\n
-    Average Change: ${round(avgDelta, 2)}\n
-    Greatest Increase in Profits:  {monthsList[increaseIndex+1]} (${greatestIncrease})\n
-    Greatest Decrease in Profits:  {monthsList[decreaseIndex+1]} (${greatestDecrease}) \n
-
+    Financial Analysis
+    ---------------------------------
+    Total Months: {months}
+    Total: $ {profitsTotal}
+    Average Change: ${round(avgDelta, 2)}
+    Greatest Increase in Profits:  {monthsList[increaseIndex+1]} (${greatestIncrease})
+    Greatest Decrease in Profits:  {monthsList[decreaseIndex+1]} (${greatestDecrease})
     """)
     # greatestIncrease , greatestDecrease , monthsList[increaseIndex+1] , monthsList[decreaseIndex+1], avgDelta)
 
