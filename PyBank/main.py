@@ -57,9 +57,22 @@ greatestDecrease = min(delta)
 increaseIndex = delta.index(greatestIncrease)
 decreaseIndex = delta.index(greatestDecrease)
 
-print(greatestIncrease , greatestDecrease , monthsList[increaseIndex+1] , monthsList[decreaseIndex+1], avgDelta, months, profitsTotal)
+#final script
+# print()
+mulit = """hello, """
+print(f"""Financial Analysis\n
+    ---------------------------------\n
+    Total Months: {months}\n
+    Total: {profitsTotal}\n
+    Average Change: {round(avgDelta, 2)}\n
 
+    """)
+    # greatestIncrease , greatestDecrease , monthsList[increaseIndex+1] , monthsList[decreaseIndex+1], avgDelta)
 
+#final text output
+# file = "PyBank_Results.txt"
+#     with open (file, 'w')
+    
 
 
    
